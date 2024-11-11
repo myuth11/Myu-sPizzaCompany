@@ -1,17 +1,54 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css";
+function Header(){
+  return <h1 style={{color:'orange',fontsize:'48px',textTransform:'uppercase'}}>Myu's Pizza Co</h1>;
+}
+
+function Pizza(){
+  return(
+    <div className='container'>
+      <img src="/pizzas/spinaci.jpg" alt="Spinaci Pizza"></img>
+      <h3>Name:"Pizza Spinaci"</h3>
+      <p>Ingredients:"Tomato,mozarella,spinach, and ricotta cheese"</p>
+      <p>Price:10</p>
+      
+    </div>
+  )
+}
+
+function Menu(){
+  return(
+    <div className='menu'>
+      <Pizza/>
+      <Pizza/>
+    </div>
+  )
+}
+
+function Footer() {
+  const currentHour = new Date().getHours();
+  const isOpen = currentHour >= 10 && currentHour < 22;
+
+  return (
+    <footer className='footer'>
+      {isOpen ? "We're currently open." : "Sorry we're closed."}
+    </footer>
+  );
+}
+
+
+function App(){
+  return(
+    <div>
+      <Header/>
+      <Menu/>
+      <Footer/>
+      </div>
+  );  
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
