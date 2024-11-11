@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fc69e78.css",
-    "main.js": "/static/js/main.a087ab5b.js",
-    "index.html": "/index.html",
-    "main.1fc69e78.css.map": "/static/css/main.1fc69e78.css.map",
-    "main.a087ab5b.js.map": "/static/js/main.a087ab5b.js.map"
+    "main.css": "/Myu-sPizzaCompany/static/css/main.1fc69e78.css",
+    "main.js": "/Myu-sPizzaCompany/static/js/main.a087ab5b.js",
+    "index.html": "/Myu-sPizzaCompany/index.html",
+    "main.1fc69e78.css.map": "/Myu-sPizzaCompany/static/css/main.1fc69e78.css.map",
+    "main.a087ab5b.js.map": "/Myu-sPizzaCompany/static/js/main.a087ab5b.js.map"
   },
   "entrypoints": [
     "static/css/main.1fc69e78.css",
